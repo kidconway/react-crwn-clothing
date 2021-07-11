@@ -27,9 +27,10 @@ export default class Login extends React.Component {
     const { value, name } = e.target;
     this.setState({ [name]: value });
   };
+
   render() {
     return (
-      <div className="login">
+      <div className="sign-in">
         <h2>I already have an account</h2>
         <span>Sign in with your email and password</span>
 
@@ -51,10 +52,12 @@ export default class Login extends React.Component {
             required
           />
 
-          <Button type="submit">Submit Form</Button>
-          <Button onClick={signInWithGoogle} isGoogleLogin>
-            Sign in with Google
-          </Button>
+          <div className="buttons">
+            <Button type="submit">Submit Form</Button>
+            <Button onClick={signInWithGoogle} isGoogleLogin>
+              Sign in with Google
+            </Button>
+          </div>
         </form>
       </div>
     );
