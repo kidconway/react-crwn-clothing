@@ -4,16 +4,16 @@ import { connect } from "react-redux";
 import { Route, Switch, Redirect } from "react-router-dom";
 import "./App.css";
 
-import HomePage from "./pages/HomePage/HomePage.component";
+import HomePage from "./Pages/HomePage/HomePage.component";
 // import HatsPage from "./pages/HatsPage/HatsPage.component";
-import ShopPage from "./pages/ShopPage/ShopPage.component";
-import LoginRegistration from "./pages/LoginRegistration/LoginRegistration.component";
-import { auth } from "./firebase/firebase.utils";
-import { setCurrentUser } from "./redux/user/user.actions";
+import ShopPage from "./Pages/ShopPage/ShopPage.component";
+import LoginRegistration from "./Pages/LoginRegistration/LoginRegistration.component";
+import { auth } from "./Firebase/Firebase.utils";
+import { setCurrentUser } from "./Redux/User/User.actions";
 
-import { createUserProfileDocument } from "./firebase/firebase.utils";
+import { createUserProfileDocument } from "./Firebase/Firebase.utils";
 
-import Header from "./components/Header/Header.component";
+import Header from "./Components/Header/Header.component";
 
 class App extends Component {
   unsubscribeFromAuth = null;

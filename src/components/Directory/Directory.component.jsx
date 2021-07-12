@@ -4,7 +4,7 @@ import MenuItem from "../MenuItem/MenuItem.component";
 
 import "./Directory.styles.scss";
 
-import SECTIONS_DATA from "./sections.data.js";
+import SECTIONS_DATA from "./Sections.data.js";
 
 class Directory extends React.Component {
   constructor() {
