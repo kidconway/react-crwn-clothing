@@ -26,6 +26,7 @@ export default class Registration extends React.Component {
 
     if (password !== confirmPassword) {
       alert("Passwords don't match");
+      return;
     }
     try {
       const { user } = await auth.createUserWithEmailAndPassword(

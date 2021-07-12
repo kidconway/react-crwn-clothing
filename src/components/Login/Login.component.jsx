@@ -60,8 +60,8 @@ export default class Login extends React.Component {
           />
 
           <div className="buttons">
-            <Button type="submit">Submit Form</Button>
-            <Button onClick={signInWithGoogle} isGoogleLogin>
+            <Button type="submit">Login</Button>
+            <Button type="button" onClick={signInWithGoogle} isGoogleLogin>
               Sign in with Google
             </Button>
           </div>
