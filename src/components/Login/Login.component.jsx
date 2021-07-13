@@ -7,7 +7,7 @@ import { auth, signInWithGoogle } from "../../Firebase/Firebase.utils";
 
 import "./Login.style.scss";
 
-export default class Login extends React.Component {
+class Login extends React.Component {
   constructor(props) {
     super(props);
 
@@ -17,21 +17,22 @@ export default class Login extends React.Component {
     };
   }
 
-  handleSubmit = async e => {
-    e.preventDefault();
+  handleSubmit = async event => {
+    event.preventDefault();
 
     const { email, password } = this.state;
 
     try {
       await auth.signInWithEmailAndPassword(email, password);
       this.setState({ email: "", password: "" });
-    } catch (err) {
-      console.log("Login component ", err.message);
+    } catch (error) {
+      console.log(error);
     }
   };
 
-  handleChange = e => {
-    const { value, name } = e.target;
+  handleChange = event => {
+    const { value, name } = event.target;
+
     this.setState({ [name]: value });
   };
 
@@ -43,25 +44,24 @@ export default class Login extends React.Component {
 
         <form onSubmit={this.handleSubmit}>
           <FormInput
-            type="email"
             name="email"
+            type="email"
             handleChange={this.handleChange}
             value={this.state.email}
             label="email"
             required
           />
           <FormInput
-            type="password"
             name="password"
-            handleChange={this.handleChange}
+            type="password"
             value={this.state.password}
+            handleChange={this.handleChange}
             label="password"
             required
           />
-
           <div className="buttons">
-            <Button type="submit">Login</Button>
-            <Button type="button" onClick={signInWithGoogle} isGoogleLogin>
+            <Button type="submit"> Sign in </Button>
+            <Button onClick={signInWithGoogle} isGoogleSignIn>
               Sign in with Google
             </Button>
           </div>
@@ -70,3 +70,5 @@ export default class Login extends React.Component {
     );
   }
 }
+
+export default Login;
