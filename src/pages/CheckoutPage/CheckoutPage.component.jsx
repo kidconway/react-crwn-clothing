@@ -5,13 +5,13 @@ import { createStructuredSelector } from "reselect";
 
 import "./CheckoutPage.styles.scss";
 
-import CheckoutItem from "../../Components/CheckoutItem/CheckoutItem.component";
-import StripeButton from "../../Components/StripeButton/StripeButton.component";
+import CheckoutItem from "../../components/CheckoutItem/CheckoutItem.component";
+import StripeButton from "../../components/StripeButton/StripeButton.component";
 
 import {
   selectCartItems,
   selectCartTotal
-} from "../../Redux/Cart/Cart.selectors";
+} from "../../redux/Cart/Cart.selectors";
 
 const CheckoutPage = ({ cartItems, total }) => (
   <div className="checkout-page">

@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 
-import { selectCartItems } from "../../Redux/Cart/Cart.selectors";
+import { selectCartItems } from "../../redux/Cart/Cart.selectors";
 import { withRouter } from "react-router-dom";
 
 import Button from "../Button/Button.component";

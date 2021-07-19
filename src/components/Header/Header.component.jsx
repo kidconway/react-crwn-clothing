@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 
-import { auth } from "../../Firebase/Firebase.utils";
+import { auth } from "../../firebase/Firebase.utils";
 
-import { selectCurrentUser } from "../../Redux/User/User.selectors";
-import { selectCartHidden } from "../../Redux/Cart/Cart.selectors";
+import { selectCurrentUser } from "../../redux/User/User.selectors";
+import { selectCartHidden } from "../../redux/Cart/Cart.selectors";
 
-import { ReactComponent as Logo } from "../../Assets/crown.svg";
+import { ReactComponent as Logo } from "../../assets/crown.svg";
 
 import CartIcon from "../CartIcon/CartIcon.component";
 import CartDropdown from "../CartDropdown/CartDropdown.component";

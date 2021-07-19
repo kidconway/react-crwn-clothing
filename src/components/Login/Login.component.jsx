@@ -3,7 +3,7 @@ import React from "react";
 import FormInput from "../FormInput/FormInput.component";
 import Button from "../Button/Button.component";
 
-import { auth, signInWithGoogle } from "../../Firebase/Firebase.utils";
+import { auth, signInWithGoogle } from "../../firebase/Firebase.utils";
 
 import "./Login.style.scss";
 

@@ -2,8 +2,8 @@ import React from "react";
 
 import "./LoginRegistration.style.scss";
 
-import Login from "../../Components/Login/Login.component";
-import Registration from "../../Components/Registration/Registration.component";
+import Login from "../../components/Login/Login.component";
+import Registration from "../../components/Registration/Registration.component";
 
 const LoginRegistration = () => {
   return (
