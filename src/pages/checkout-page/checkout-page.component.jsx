@@ -3,15 +3,15 @@ import React from "react";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 
-import "./CheckoutPage.styles.scss";
+import "./checkout-page.styles.scss";
 
-import CheckoutItem from "../../components/CheckoutItem/CheckoutItem.component";
-import StripeButton from "../../components/StripeButton/StripeButton.component";
+import CheckoutItem from "../../components/checkout-item/checkout-item.component";
+import StripeButton from "../../components/stripe-button/stripe-button.component";
 
 import {
   selectCartItems,
   selectCartTotal
-} from "../../redux/Cart/Cart.selectors";
+} from "../../redux/cart/cart.selectors";
 
 const CheckoutPage = ({ cartItems, total }) => (
   <div className="checkout-page">

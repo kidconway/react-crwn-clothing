@@ -1,9 +1,9 @@
 import React from "react";
 
-import "./LoginRegistration.style.scss";
+import "./login-registration.style.scss";
 
-import Login from "../../components/Login/Login.component";
-import Registration from "../../components/Registration/Registration.component";
+import Login from "../../components/login/login.component";
+import Registration from "../../components/registration/registration.component";
 
 const LoginRegistration = () => {
   return (

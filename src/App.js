@@ -5,19 +5,19 @@ import { createStructuredSelector } from "reselect";
 import { Route, Switch, Redirect } from "react-router-dom";
 import "./App.css";
 
-import HomePage from "./pages/HomePage/HomePage.component";
-import CheckoutPage from "./pages/CheckoutPage/CheckoutPage.component";
-import ShopPage from "./pages/ShopPage/ShopPage.component";
-import LoginRegistration from "./pages/LoginRegistration/LoginRegistration.component";
+import HomePage from "./pages/homepage/homepage.component";
+import CheckoutPage from "./pages/checkout-page/checkout-page.component";
+import ShopPage from "./pages/shop-page/shop-page.component";
+import LoginRegistration from "./pages/login-registration/login-registration.component";
 
-import { auth } from "./firebase/Firebase.utils";
-import { setCurrentUser } from "./redux/User/User.actions";
+import { auth } from "./firebase/firebase.utils";
+import { setCurrentUser } from "./redux/user/user.actions";
 
-import { selectCurrentUser } from "./redux/User/User.selectors";
+import { selectCurrentUser } from "./redux/user/user.selectors";
 
-import { createUserProfileDocument } from "./firebase/Firebase.utils";
+import { createUserProfileDocument } from "./firebase/firebase.utils";
 
-import Header from "./components/Header/Header.component";
+import Header from "./components/header/header.component";
 
 class App extends Component {
   unsubscribeFromAuth = null;
