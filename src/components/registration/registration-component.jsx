@@ -5,7 +5,7 @@ import Button from "../button/button-component";
 
 import { auth, createUserProfileDocument } from "../../firebase/firebase-utils";
 
-import "./registration-styles.scss";
+import { SignUpContainer, TitleContainer } from "./registration.styles";
 
 export default class Registration extends React.Component {
   constructor(props) {
@@ -56,10 +56,10 @@ export default class Registration extends React.Component {
   render() {
     const { displayName, email, password, confirmPassword } = this.state;
     return (
-      <div className="sign-up">
-        <h2 className="title">I do not have an account</h2>
+      <SignUpContainer>
+        <TitleContainer>I do not have an account</TitleContainer>
         <span>Sign up with your email and password</span>
-        <form onSubmit={this.handleSubmit} className="sign-up-form">
+        <form onSubmit={this.handleSubmit}>
           <FormInput
             type="text"
             name="displayName"
@@ -94,7 +94,7 @@ export default class Registration extends React.Component {
           />
           <Button type="submit">REGISTER</Button>
         </form>
-      </div>
+      </SignUpContainer>
     );
   }
 }
