@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
+import * as cors from "cors";
 
 import { Route, Switch, Redirect } from "react-router-dom";
 import "./App.css";
@@ -46,6 +47,7 @@ class App extends Component {
   }
 
   render() {
+    cors({ origin: true });
     return (
       <div>
         <Header />
