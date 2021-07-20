@@ -13,7 +13,7 @@ import LoginRegistration from "./pages/login-registration/login-registration.com
 import { auth } from "./firebase/firebase.utils";
 import { setCurrentUser } from "./redux/user/user.actions";
 
-import { selectCurrentUser } from "./redux/user/user.selectors";
+import { selectCurrentUser } from "./redux/user/user";
 
 import { createUserProfileDocument } from "./firebase/firebase.utils";
 
