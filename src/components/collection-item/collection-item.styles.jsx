@@ -19,6 +19,14 @@ export const CollectionItemContainer = styled.div`
   }
 `;
 
+export const ButtonContainer = styled(Button)`
+  width: 80%;
+  opacity: 0.7;
+  position: absolute;
+  top: 255px;
+  display: none;
+`;
+
 export const ImageContainer = styled.div`
   width: 100%;
   height: 95%;
@@ -44,12 +52,4 @@ export const NameContainer = styled.span`
 export const PriceContainer = styled.span`
   width: 10%;
   text-align: right;
-`;
-
-export const ButtonContainer = styled(Button)`
-  width: 80%;
-  opacity: 0.7;
-  position: absolute;
-  top: 255px;
-  display: none;
 `;
