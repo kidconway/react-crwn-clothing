@@ -5,7 +5,7 @@ import {
   clearItemFromCart,
   removeItem,
   addItem
-} from "../../redux/cart/cart-actions";
+} from "../../redux/cart/cart.actions";
 
 import {
   CheckoutItemContainer,

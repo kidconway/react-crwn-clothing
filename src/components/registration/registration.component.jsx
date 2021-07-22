@@ -1,9 +1,9 @@
 import React from "react";
 
-import FormInput from "../form-input/form-input-component";
-import Button from "../button/button-component";
+import FormInput from "../form-input/form-input.component";
+import Button from "../button/button.component";
 
-import { auth, createUserProfileDocument } from "../../firebase/firebase-utils";
+import { auth, createUserProfileDocument } from "../../firebase/firebase.utils";
 
 import { SignUpContainer, TitleContainer } from "./registration.styles";
 

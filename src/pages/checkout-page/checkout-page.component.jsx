@@ -11,13 +11,13 @@ import {
   WarningContainer
 } from "./checkout-page.styles";
 
-import CheckoutItem from "../../components/checkout-item/checkout-item-component";
-import StripeButton from "../../components/stripe-button/stripe-button-component";
+import CheckoutItem from "../../components/checkout-item/checkout-item.component";
+import StripeButton from "../../components/stripe-button/stripe-button.component";
 
 import {
   selectCartItems,
   selectCartTotal
-} from "../../redux/cart/cart-selectors";
+} from "../../redux/cart/cart.selectors";
 
 const CheckoutPage = ({ cartItems, total }) => (
   <CheckoutPageContainer>

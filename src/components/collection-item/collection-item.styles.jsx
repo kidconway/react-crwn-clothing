@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Button from "../button/button-component";
+import Button from "../button/button.component";
 
 export const CollectionItemContainer = styled.div`
   width: 22vw;
