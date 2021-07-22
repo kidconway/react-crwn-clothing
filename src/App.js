@@ -10,12 +10,10 @@ import CheckoutPage from "./pages/checkout-page/checkout-page-component";
 import ShopPage from "./pages/shop-page/shop-page-component";
 import LoginRegistration from "./pages/login-registration/login-registration-component";
 
-import { auth } from "./firebase/firebase-utils";
 import { setCurrentUser } from "./redux/user/user-actions";
-
 import { selectCurrentUser } from "./redux/user/user-selectors";
 
-import { createUserProfileDocument } from "./firebase/firebase-utils";
+import { auth, createUserProfileDocument } from "./firebase/firebase-utils";
 
 import Header from "./components/header/header-component";
 
@@ -35,9 +33,8 @@ class App extends Component {
             ...snapShot.data()
           });
         });
-      } else {
-        setCurrentUser(userAuth);
       }
+      setCurrentUser(userAuth);
     });
   }
 
