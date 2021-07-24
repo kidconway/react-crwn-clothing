@@ -1,16 +1,16 @@
 import React from "react";
 
-import { SignInAndSignUpContainer } from "./login-registration.styles";
+import { LoginAndSignUpContainer } from "./login-registration.styles";
 
 import Login from "../../components/login/login.component";
 import Registration from "../../components/registration/registration.component";
 
 const LoginRegistration = () => {
   return (
-    <SignInAndSignUpContainer>
+    <LoginAndSignUpContainer>
       <Login />
       <Registration />
-    </SignInAndSignUpContainer>
+    </LoginAndSignUpContainer>
   );
 };
 
